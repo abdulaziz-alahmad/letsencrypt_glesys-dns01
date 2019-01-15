@@ -2,8 +2,9 @@
 How to set up letsencrypt via DNS (glesys-dns01) Works for wildcard
 
 ## Dependencies
+- dehydrated (apt-get install dehydrated)
 - curl
-- xmlstarlet (debian: apt-get install curl xmlstarlet)
+- xmlstarlet (apt-get install curl xmlstarlet)
 - GleSYS API credentials (DOMAIN permissions for list, add, remove records) 
   (in case you want to uppload the cert to load-balancer you will need permissions to the LB too)
 
@@ -19,7 +20,5 @@ How to set up letsencrypt via DNS (glesys-dns01) Works for wildcard
   * glesys-dns-01-hook.sh # if you don't have a load-balancer # Active be default
   * glesys-dns-01-lbl-hook.sh # to be upload the cert direct to the load-balancer
 - echo "example.com *.example.com" > /etc/dehydrated/domains.txt # you domain here!
-
-- cd /etc/dehydrated
-- ./dehydrated --register --accept-terms
-- ./dehydrated -c
+- dehydrated --register --accept-terms
+- dehydrated -c
