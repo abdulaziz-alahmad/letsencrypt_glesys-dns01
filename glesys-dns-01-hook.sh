@@ -123,6 +123,25 @@ clean_challenge () {
         done
     done
 }
+deploy_cert () {
+    ######## GleSYS Specific ############################################
+    #
+    # Uncomment what matches servers setup.
+    #
+    # Apache2
+    #/etc/init.d/apache2 restart
+    #
+    # Nginx
+    #/etc/init.d/nginx restart
+    #
+    # HaProxy
+    #cat $5 > /etc/haproxy/ssl/$2.pem
+    #cat $3 >> /etc/haproxy/ssl/$2.pem
+    #chmod 600 /etc/haproxy/ssl/$2.pem
+    #/etc/init.d/haproxy reload
+    #
+    #####################################################################
+}
 
 exit_hook () {
     # - You might want to restart your web server here or
