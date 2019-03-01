@@ -140,6 +140,9 @@ deploy_cert () {
     #chmod 600 /etc/haproxy/ssl/$2.pem
     #/etc/init.d/haproxy reload
     #
+    # Postfix
+    #/etc/init.d/postfix reload
+    #
     #####################################################################
 }
 
