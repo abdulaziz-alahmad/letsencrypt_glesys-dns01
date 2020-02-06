@@ -16,8 +16,7 @@ DOMAINS_TXT="/etc/dehydrated/domains.txt"
 CHALLENGETYPE="dns-01"
 HOOK="/etc/dehydrated/glesys-dns-01-hook.sh"
 #HOOK="/etc/dehydrated/glesys-dns-01-lbl-hook.sh"
-CONTACT_EMAIL=abed@glesys.se
+CONTACT_EMAIL=name.sirname@domain.com
 CHAIN="yes"
 CA="https://acme-v02.api.letsencrypt.org/directory"
 #CA="https://acme-staging-v02.api.letsencrypt.org/directory"
-

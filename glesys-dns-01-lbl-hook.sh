@@ -52,7 +52,7 @@ hash xmlstarlet
 hash curl
 
 # Load GleSYS Credentials.
-source /etc/ssl/private/glesys-credentials
+source /etc/ssl/private/.glesys-credentials
 
 # Parse all domain challenges from argument list.
 domains=();
@@ -213,4 +213,3 @@ _start_log $@
 # Run hook (if defined).
 declare -f $HOOK > /dev/null && $HOOK $@
 exit 0
-

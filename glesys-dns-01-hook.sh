@@ -52,7 +52,7 @@ hash xmlstarlet
 hash curl
 
 # Load GleSYS Credentials.
-source /etc/ssl/private/glesys-credentials
+source /etc/ssl/private/.glesys-credentials
 
 # Parse all domain challenges from argument list.
 domains=();
@@ -144,11 +144,14 @@ deploy_cert () {
     #/etc/init.d/postfix reload
     #
     #####################################################################
+    :
 }
 
 exit_hook () {
     # - You might want to restart your web server here or
     # - Truncate log file, since no errors occured
+    # Uncomment the next line if you want to remove the logfile at this point
+    # rm $LOGFILE
     :
 }
 
@@ -182,4 +185,3 @@ _start_log $@
 # Run hook (if defined).
 declare -f $HOOK > /dev/null && $HOOK $@
 exit 0
-
