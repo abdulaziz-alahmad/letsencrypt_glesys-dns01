@@ -5,9 +5,12 @@
 #   Original version by kiranos:
 #   https://github.com/kiranos/API/tree/master/BASH/LetsencryptGlesysHook
 #
-#   This fork is maintained by marcusmansson:
+#   Edited by marcusmansson:
 #   https://gitlab.com/marcusmansson/glesys-dns01
 #
+#   Maintained by abed19919
+#   https://github.com/abed19919/letsencrypt_glesys-dns01
+#   
 #   Dependencies
 #   ============
 #   - curl and xmlstarlet (debian: apt-get install curl xmlstarlet)
